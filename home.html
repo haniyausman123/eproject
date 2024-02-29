@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinegar-Food</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="icon" href="pictures/download-removebg-preview.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;}
+
+        .header {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            background-color: black;
+  
+        }
+
+        .head1 {
+            width: 12.5%;
+            height: 200px;
+            padding-left: 3px;
+            box-sizing: border-box;
+        }
+       
+       
+        
+        .nav-bar {
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            padding: 0px 10px;
+            justify-content: center;
+              }
+
+        .logo {
+            width: 10%;
+            height: 120px;
+        }
+
+        .nav {
+            width: 90%;
+            height: 120px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            padding-left: 30px;
+        }
+
+        .nav ul li {
+            display: inline;
+            padding: 10px;
+        }
+
+        .nav1 a {
+            color: white;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bolder;
+            font-style: italic;
+            border-top: 2px white dotted;
+            border-bottom: 2px white dotted;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+           
+        }
+       .nav1 a:hover{
+            color: gold;
+            border-right: 3px solid maroon;
+            border-top: 3px solid maroon;
+            border-bottom: none;
+            border-radius: 12px;
+            padding: 8px;
+            font-size:medium;
+            font-weight: lighter;
+        }
+        .item li a{
+            color: black;
+            padding: 0px 5px;
+        }
+        .item li a:hover{
+            border: none;
+            color: gold;
+        }
+        .back-video{
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+        }
+        .hero{
+            width: 100%;
+            height: 300px;
+            position: relative;
+            
+         }
+         .content{
+            height: 350px;
+            text-align: center;
+            /* background-color: aqua; */
+            
+        }
+        .content h1{
+            text-align: center;
+            color: gainsboro;
+            font-size: 50px;
+            margin-top: 0;
+        }
+        .content a{
+            text-decoration: none;
+            color: gold;
+            font-size: 22px;
+            border-right: 3px solid maroon;
+            border-top: 3px solid maroon;
+            border-bottom: none;
+            border-left: none;
+            border-radius: 12px;
+            padding: 10px;
+            
+        }
+        .content a:hover{
+            color: antiquewhite;
+            font-size: 18px;
+            padding: 12px;
+            border: 2px solid white;
+           }
+        .span1{
+            color: gold;
+            font-size: 70px;
+            text-shadow: 20px;
+        }
+        .our-moto h1{
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            font-style: italic;
+        }
+        .para{
+            text-align: center;
+            font-size: larger;
+            padding: 25px;
+            margin-left: 20px;
+            margin-right: 20px;
+            color: white;
+        }
+        footer{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            display:flex;
+            justify-content: space-between;
+            margin-top: 80px;
+        }
+        .p1{
+        
+            font-size: larger;
+            margin-left: 10px;
+        }
+        .p2{
+        
+            font-size: larger;
+            padding-right: 10px;
+        }
+        .container{
+            width: 100%;
+            height: 500px;
+            background-color: #222;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            font-style: italic;
+        }
+        .swiper{
+            width: 80%;
+            height: 500px;
+        }
+        .swiper-slide img{
+            width: 100%;
+        }   
+        .bank-disc{
+            width: 100%;
+            height: 400px;
+            background-color: beige;
+            display: flex;
+            margin: 7px;
+        } 
+        .bank1{
+            width: 25%;
+            height:400px;
+            padding: 6px;
+            padding-bottom: 7px;
+            padding-top: 6px;
+        }
+        .bank2{
+            width: 25%;
+            height: 400px;
+            padding: 6px;
+            padding-bottom: 7px;
+            padding-top: 6px;
+        }
+        .bank3{
+            width: 25%;
+            height: 400px;
+            padding: 6px;
+            padding-bottom: 7px;
+            padding-top: 6px;
+        }
+        .bank4{
+            width: 25%;
+            height: 400px;
+            padding: 6px;
+            padding-bottom: 7px;
+            padding-top: 6px;
+        }
+        .icon{
+          color: maroon;
+        }
+         
+        @media(max-width:767px){
+          .content{
+            height: 350px;
+            text-align: center;
+            
+          }
+        .content h1{
+            text-align: center;
+            color: gainsboro;
+            font-size: 40px;
+            margin-top: 0;
+        }
+        .content a{
+            text-decoration: none;
+            color: gold;
+            font-size: 22px;
+            border-right: 3px solid maroon;
+            border-top: 3px solid maroon;
+            border-bottom: none;
+            border-left: none;
+            border-radius: 12px;
+            padding: 10px;
+            
+        }
+        .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: medium;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: black;
+           border: none;
+            font-size:medium;
+            font-weight: bolder;
+        }
+        .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 10px;
+          }
+        .hero{
+            width: 100%;
+            height: 110px;
+            position: relative;
+            
+         }
+         .swiper{
+            width: 100%;
+            height: 300px;
+        }
+        .container{
+            width: 100%;
+            height: 300px;
+            background-color: #222;
+    
+        }
+        .swiper-slide img{
+            width: 100%;
+            height: 300px;
+        }   
+        .p1{
+        
+        font-size:10px;
+            }
+        .p2{
+    
+        font-size: 10px;
+       
+            }
+            footer{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            display:flex;
+            justify-content: space-between;
+        }
+        .our-moto h1{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-style: italic;
+        }
+        .para{
+            text-align: center;
+            font-size: medium;
+            padding: 25px;
+            margin-left: 20px;
+            margin-right: 20px;
+            color: white;
+        }
+        /* .navbar-collapse {
+            background-color: gold;
+            width:100%;
+            height: 500px;
+            float: right;
+          } */
+        }
+        @media(max-width:1199px){
+          .p1{
+        
+        font-size:18px;
+            }
+        .p2{
+    
+        font-size: 18px;
+        float: right;
+        }
+        .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: x-large;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: black;
+           border: none;
+            font-size:x-large;
+            font-weight: bolder;
+        }
+        .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 15px;
+          }
+        /* .navbar-collapse {
+            background-color: black;
+            font-size: 14px;
+            width:50%;
+            height: 800px;
+          } */
+          
+        }
+        @media(max-width:991px){
+        .container{
+            width: 100%;
+            height: 600px;
+            background-color: #222;
+        }
+        .swiper{
+            width: 100%;
+            height: 600px;
+        }
+        .swiper-slide img{
+            width: 100%;
+            height: 600px;
+        }  
+        .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: larger;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: black;
+           border: none;
+            font-size:larger;
+            font-weight: bolder;
+        }
+        .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 12px;
+          }
+        /* .navbar-collapse {
+            background-color: black;
+            font-size: 12px;
+            width:50%;
+            height: 800px;
+          } */
+        /* .our-moto{
+            margin-top: 0px;
+        } */
+        .content{
+            height: 150px;
+            text-align: center;
+
+        }}
+        @media (max-width:1399px){
+          .content{
+            height: 500px;
+            text-align: center;
+            
+        }
+        .our-moto h1{
+          font-size: 50px;
+        }
+        .para{
+            text-align: center;
+            font-size: larger;
+            padding: 25px;
+            margin-left: 20px;
+            margin-right: 20px;
+            color: white;
+        }
+        }
+        @media(max-width:575px){
+          .our-moto h1{
+          font-size: 30px;
+        }
+        .para{
+            text-align: center;
+            font-size: small;
+            padding: 25px;
+            margin-left: 20px;
+            margin-right: 20px;
+            color: white;
+        }
+        .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: small;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: black;
+           border: none;
+            font-size:medium;
+            font-weight: bolder;
+        }
+        .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 10px;
+          }
+        }
+         </style>
+</head>
+<body style="background-color:rgb(34, 34, 34);">
+  <div class="header">
+    <div class="head1"><img src="pictures/food.jpg" width="100%" height="200px"></div>
+    <div class="head1"><img src="pictures/food1.jpg" width="100%" height="200px" alt=""></div>
+    <div class="head1"><img src="pictures/food2.jpg" width="100%" height="200px" alt=""></div>
+    <div class="head1"><img src="pictures/food3.jpg" width="100%" height="200px" alt=""></div>
+    <div class="head1"><img src="pictures/food4.jpg" width="100%" height="200px" alt=""></div>
+    <div class="head1"><img src="pictures/food5.jpg" width="100%" height="200px" alt=""></div>
+    <div class="head1"><img src="pictures/food6.jpg" width="100%" height="200px" alt=""></div>
+    <div class="head1"><img src="pictures/food7.jpg" width="100%" height="200px" alt=""></div>
+</div>
+<video autoplay muted loop plays-inline class="back-video" >
+  <source src="pictures/Restaurant promotion video_ Arcadian Cafe. (online-video-cutter.com) (1).mp4">
+</video>
+<div class="hero">
+    <nav class="navbar navbar-expand-xl bg-body-tertiary">
+        <div class="container-fluid nav-bar">
+          <img src="pictures/download-removebg-preview.png" class="logo">
+          <button class="navbar-toggler bt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item nav1">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item nav1">
+                <a class="nav-link" href="about us.html">About us</a>
+              </li>
+              <li class="nav-item dropdown nav1">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Meals
+                </a>
+                <ul class="dropdown-menu item">
+                  <li><a class="dropdown-item" href="regular.html">Regular</a></li>
+                  <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+                  <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                  <li><a class="dropdown-item" href="desert.html">Desert</a></li>
+                  <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>  
+                </ul>
+                <li class="nav-item nav1">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item nav1">
+                    <a class="nav-link" href="award.html">Awards</a>
+                  </li>
+                  <li class="nav-item nav1">
+                    <a class="nav-link" href="catering.html">Catering</a>
+                  </li>
+                  <li class="nav-item nav1">
+                    <a class="nav-link" href="recipe.html">Recipe of the month</a>
+                  </li>
+                  <li class="nav-item nav1">
+                    <a class="nav-link" href="contact us.html">Contact us</a>
+                  </li>
+                  <li class="nav-item nav1">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                  </li>
+             
+          </div>
+        </div>
+      </nav>
+    </div>
+      <div class="content">
+        <h1><span class="span1">Vinegar</span> Food</h1><br><br>
+        <a href="#">ORDER ONLINE</a>
+    </div>
+    <div class="our-moto">
+      <h1>"Our Moto Is To Bring First Class Service In Town"</h1>
+      <p class="para">We welcome you to explore our taste of the world, in continental and Chinese delights and that's even before
+          you get to the variety and excellence, of our barbecue grill. With warmth service rarely experienced, it is
+          a perfect place of rejoice with family, to soak in the relaxing decor and with deep desire to revisit for
+          once, in never enough! Now with our network of four branches across the city of lights, it is possible to
+          experience the magic, whilst collect the best of memories much more close to home. Meals are served up from traditionally Meze style to flavoursome chargrills giving you and your loved ones the chance to share your food, stories and laughs. We offer a warm and friendly dining restaurant, and an ambience to remember, making us the ideal venue for all your special occasions.We offer best chefs with
+          neat and clean kitchen services to induldge yourselves.</p></div><br><br>
+      </div>
+      <div class="bank-disc">
+        <div class="bank1"><img src="pictures/bank3.jpg" width="100%" height="390px"></div>
+        <div class="bank2"><img src="pictures/bank4.jpg" width="100%" height="390px"></div>
+        <div class="bank3"><img src="pictures/bank5.jpg" width="100%" height="390px"></div>
+        <div class="bank4"><img src="pictures/bank8.jpg" width="100%" height="390px"></div>
+        </div><br><br>
+            
+            
+    <div class="container">
+      <h1>"Meet Our Chefs"</h1><br>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="pictures/head-chef.webp"></div>
+              <div class="swiper-slide"><img src="pictures/kitchen5.jpg"></div>
+              <div class="swiper-slide"><img src="pictures/pastry-chef.webp"></div>
+              <div class="swiper-slide"><img src="pictures/kitchen6.jpg"></div>
+              <div class="swiper-slide"><img src="pictures/team.jpg"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+    </div>
+    <footer>
+        <p class="p1">All Rights Reserved By <b>Vinegar-Food</b>(JADSONS LTD) &copy; since 2000</p>
+        <p class="p2">All prices are inclusive of 13% GST</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        autoplay: {delay:2000,},
+        loop: true,
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',},});
+    </script>
+
+    
+</body>
+</html>

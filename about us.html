@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinegar-Food</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="pictures/download-removebg-preview.png">
+
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            background-color: black;
+        }
+        body{
+            background-image: url(../eproject/pictures/smoke2.jpg);
+            background-size: cover;
+        }
+
+        .head1 {
+            width: 12.5%;
+            height: 200px;
+            padding-left: 3px;
+            box-sizing: border-box;
+        }
+        .nav-bar {
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            padding: 0px 10px;
+            justify-content: center;
+              }
+
+        .logo {
+            width: 10%;
+            height: 120px;
+        }
+
+        .nav {
+            width: 90%;
+            height: 120px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            padding-left: 30px;
+        }
+
+        .nav ul li {
+            display: inline;
+            padding: 10px;
+        }
+
+        .nav1 a {
+            color: white;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bolder;
+            font-style: italic;
+            border-top: 2px white dotted;
+            border-bottom: 2px white dotted;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+           
+        }
+       .nav1 a:hover{
+            color: gold;
+            border-right: 3px solid maroon;
+            border-top: 3px solid maroon;
+            border-bottom: none;
+            border-radius: 12px;
+            padding: 8px;
+            font-size:medium;
+            font-weight: lighter;
+        }
+        .hero{
+            width: 100%;
+            height: 150px;
+            position: relative;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+         }
+         .item li a{
+            color: black;
+            padding: 0px 5px;
+        }
+        .item li a:hover{
+            border: none;
+            color: gold;
+        }
+       
+        
+        .chef-content {
+            margin-left: 100px;
+            margin-top: 20px;
+            width: 45%;
+            height: 350px;
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0 77%);
+            background-color: rgb(206, 206, 184);
+        }
+        h2{
+            padding: 10px;
+            text-align: center;
+            color: black;
+            font-size: 40px;
+            font-style: italic;
+        }
+        p{
+            padding: 12px;
+            text-align: center;
+            font-size: large;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .chef-pic{
+            width: 40%;
+            height: 290px;
+            margin-left: 70px;
+            margin-top: 10px;
+        }
+        .chef{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            margin-top: 40px;
+        }
+        .about-us{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            margin: 10px 5px;
+        }
+        .restaurant{
+            width: 50%;
+            height: 500px;
+            background-image: url(../eproject/pictures/pexels-quark-studio-3201921.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+            margin-left: 20px;
+            box-sizing: border-box;
+            /* position: relative; */
+
+        }
+        .description{
+            width: 50%;
+            height: 500px;
+            padding-top: 40px;
+            margin-left: 20px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        .description h2{
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            font-style: italic;
+        }
+        .p3{
+            text-align: center;
+            color: rgb(245, 221, 221);
+            font-size: larger;
+        }
+        footer{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        p1{
+        
+            font-size: larger;
+        }
+        p2{
+            font-size: larger;
+            float: right;}
+
+        @media(max-width:767px){
+
+        .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: medium;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: black;
+           border: none;
+            font-size:medium;
+            font-weight: bolder;
+        }
+        .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 10px;
+          }
+          .description h2{
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            font-style: italic;
+        }
+        .about-us{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            margin: 0px 0px;
+        }
+        .restaurant{
+            width: 50%;
+            height: 500px;
+            background-image: url(../eproject/pictures/pexels-quark-studio-3201921.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 0px;
+            margin-left: 5px;
+
+        }
+        .description{
+            width: 50%;
+            height: 500px;
+            padding-top: 0px;
+            margin-left: 0px;
+            margin-top: 5px;
+        }
+        .p3{
+            text-align: center;
+            color: rgb(245, 221, 221);
+            font-size: 10px;
+        }
+        .chef-content {
+            margin-left: 100px;
+            margin-top: 30px;
+            width: 45%;
+            height: 400px;
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0 77%);
+            background-color: rgb(206, 206, 184);
+        }
+        h2{
+            padding: 10px;
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            font-style: italic;
+        }
+        p{
+            padding: 10px;
+            text-align: center;
+            font-size: small;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .chef-pic{
+            width: 45%;
+            height: 320px;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        .chef{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            margin-top: 70px;
+        }
+        .p1{
+        
+        font-size:10px;
+            }
+        .p2{
+    
+        font-size: 10px;
+       
+            }
+            footer{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            padding: 0px;
+        }
+        }
+        @media(max-width:991px){
+            .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: larger;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: black;
+           border: none;
+            font-size:larger;
+            font-weight: bolder;
+        }
+        .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 12px;
+          }
+          .description h2{
+            text-align: center;
+            color: white;
+            font-size: 33px;
+            font-style: italic;
+        }
+        .about-us{
+            width: 100%;
+            height: 600px;
+            display: flex;
+            margin: 0px 0px;
+        }
+        .restaurant{
+            width: 50%;
+            height: 600px;
+            background-image: url(../eproject/pictures/pexels-quark-studio-3201921.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+            margin-left: 10px;
+            box-sizing: border-box;
+
+        }
+        .description{
+            width: 50%;
+            height: 600px;
+            padding-top: 10px;
+            margin-left: 0px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        .p3{
+            text-align: center;
+            color: rgb(245, 221, 221);
+            font-size:18px;
+        }
+        .chef-content {
+            margin-left: 100px;
+            margin-top: 20px;
+            width: 45%;
+            height: 300px;
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0 77%);
+            background-color: rgb(206, 206, 184);
+        }
+        h2{
+            padding: 10px;
+            text-align: center;
+            color: black;
+            font-size: 23px;
+            font-style: italic;
+        }
+        p{
+            padding: 10px;
+            text-align: center;
+            font-size: small;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .chef-pic{
+            width: 45%;
+            height: 290px;
+            margin-left: 50px;
+            margin-top: 40px;
+        }
+        .chef{
+            width: 100%;
+            height: 310px;
+            display: flex;
+            margin-top: 45px;
+        }
+        .p1{
+        
+        font-size:10px;
+            }
+        .p2{
+    
+        font-size: 10px;
+       
+            }
+            footer{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            padding: 0px;
+        }
+        }
+        @media(max-width:1199px){
+            .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: x-large;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: black;
+           border: none;
+            font-size:x-large;
+            font-weight: bolder;
+        }
+        .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 15px;
+          }
+            .about-us{
+            width: 100%;
+            height: 600px;
+            display: flex;
+            margin: 0px 0px;
+        }
+        .restaurant{
+            width: 50%;
+            height: 600px;
+            background-image: url(../eproject/pictures/pexels-quark-studio-3201921.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+            margin-left: 10px;
+            box-sizing: border-box;
+
+        }
+        .description{
+            width: 50%;
+            height: 600px;
+            padding-top: 10px;
+            margin-left: 0px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        .p3{
+            text-align: center;
+            color: rgb(245, 221, 221);
+            font-size: larger;
+        }
+        footer{
+            width: 100%;
+            height: 60px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .chef{
+            width: 100%;
+            height: 360px;
+            display: flex;
+            margin-top: 45px;
+        }
+        .chef-content {
+            margin-left: 100px;
+            margin-top: 20px;
+            width: 45%;
+            height: 360px;
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0 77%);
+            background-color: rgb(206, 206, 184);
+        }
+        .chef-pic{
+            width: 45%;
+            height: 310px;
+            margin-left: 50px;
+            margin-top: 40px;
+        }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="head1"><img src="pictures/food.jpg" width="100%" height="200px"></div>
+        <div class="head1"><img src="pictures/food1.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food2.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food3.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food4.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food5.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food6.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food7.jpg" width="100%" height="200px" alt=""></div>
+    </div>
+    <div class="hero">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary">
+            <div class="container-fluid nav-bar">
+              <img src="pictures/download-removebg-preview.png" class="logo">
+              <button class="navbar-toggler bt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item nav1">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item nav1">
+                    <a class="nav-link" href="about us.html">About us</a>
+                  </li>
+                  <li class="nav-item dropdown nav1">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Meals
+                    </a>
+                    <ul class="dropdown-menu item">
+                      <li><a class="dropdown-item" href="regular.html">Regular</a></li>
+                      <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+                      <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                      <li><a class="dropdown-item" href="desert.html">Desert</a></li>
+                      <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>  
+                    </ul>
+                    <li class="nav-item nav1">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="award.html">Awards</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="catering.html">Catering</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="recipe.html">Recipe of the month</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="contact us.html">Contact us</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                      </li>
+                 
+              </div>
+            </div>
+          </nav>
+        </div>
+    <div class="about-us">
+        <div class="restaurant"></div>
+        <div class="description"><h2>About us</h2>
+            <p class="p3">When you are looking for Continental, Middle Eastern or Italian restaurants in your town, you cannot go past US.
+            We have captured the exotic flavours of the Mediterranean seaside region through to Turkey & created a exotic 
+            dining experience you will never forget. While we largely focus on offering delicious Middle Eastern & Turkish 
+            food. Meals are served up from traditionally
+            Meze style to flavoursome chargrills giving you and your loved ones the chance to share your food, stories and laughs. 
+            We offer a warm and friendly dining restaurant, and an ambience to remember, making us the ideal venue for all your special
+            occasions.</p>
+        </div>
+    </div><br>
+    <div class="chef">
+    <div class="chef-content">
+        <h2>Our Head Chef</h2>
+        <p>Since 2000 he is the one who is managing, controlling and directing the food preparation process. Approving
+            and polishing dishes before they reach to the customer. Managing and working closely with other Chefs of all 
+            levels.</p>
+    </div>
+    <div class="chef-pic">
+         <img src="pictures/head-chef1.jpeg" width="65%">
+    </div>
+</div><br>
+<footer>
+    <p1>All Rights Reserved By <b>Vinegar-Food</b>(JADSONS LTD) &copy; since 2000</p1>
+    <p2>All prices are inclusive of 13% GST</p2>
+</footer>
+
+</body>
+
+</html>
